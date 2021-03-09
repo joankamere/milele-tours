@@ -127,10 +127,11 @@
    /* jumbotron */
   .jumbotron{
     background-image: url("");
-    /* height: ; */
+     height: 80vh;
     background-size: cover;
     background-position: center;
     color: #fff;
+    border-radius: 0px;
   }
   .jumbotron h1{
     margin: 30px 0;
