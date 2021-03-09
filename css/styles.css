@@ -1,27 +1,7 @@
-/* about */
-.about-img__container {
-    position: relative;
-  }
-  
-  .about-img__container::before {
-    content: "";
-    position: absolute;
-    top: -1.5rem;
-    left: -1.7rem;
-    width: 100%;
-    height: 100%;
-    
-    outline: 0.5rem solid rgb(249, 228, 148);
-    z-index: -1;
-    transition: all 1s ease-in-out;
-  }
-  .about-img__container:hover:before {
-    top: 0;
-    left: 0;
-  }
-  
+
+
   /*end of  about */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -72,7 +52,10 @@
     transition: all 0.3s ease;
   }
   .menu-list li a:hover{
-    color: #007bff;
+    color: white;
+    border-bottom:1px solid #fff;
+    margin-bottom: -1px;
+
   }
   
   .icon{
@@ -147,7 +130,7 @@
    /* jumbotron */
   .jumbotron{
     background-image: url("");
-    height: ;
+    /* height: ; */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -160,9 +143,70 @@
   .intro {
     padding-top: 140px;
   }
-  .intro img{
+  /* .intro img{
 
+  } */
+/* about */
+.about-img__container {
+    position: relative;
   }
+  
+  .about-img__container::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid rgb(68, 64, 64);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+  }
+  .about-img__container:hover:before {
+    top: 0;
+    left: 0;
+  }
+  
+
+  /* travel items */
+.travel {
+    background: rgb(238, 238, 238);
+  }
+  .img-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .travel-img {
+    transition: all 1s ease-in-out;
+  }
+  .img-container:hover .travel-img {
+    transform: scale(1.2);
+  }
+  .travel-item-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.75rem;
+    background: rgb(249, 228, 148);
+    border-top-left-radius: 1rem;
+    transition: all 1s ease-in-out;
+    transform: translate(100%, 100%);
+  }
+  .img-container:hover .travel-item-icon {
+    transform: translate(0, 0);
+  }
+  .travel-item-icon:hover {
+    color: #fff;
+  }
+  .travel-item-value {
+    color: rgb(249, 228, 148);
+  }
+
+  
+  /*end of  travel items */
+
+
 /* footer */
 footer{
   position: relative;
@@ -313,66 +357,5 @@ footer{
     margin: 5px 0;
   }
 }
-/* about */
-.about-img__container {
-    position: relative;
-  }
-  
-  .about-img__container::before {
-    content: "";
-    position: absolute;
-    top: -1.5rem;
-    left: -1.7rem;
-    width: 100%;
-    height: 100%;
-    
-    outline: 0.5rem solid rgb(249, 228, 148);
-    z-index: -1;
-    transition: all 1s ease-in-out;
-  }
-  .about-img__container:hover:before {
-    top: 0;
-    left: 0;
-  }
-  
-  /*end of  about */
 
-  /* travel items */
-.travel {
-    background: rgb(238, 238, 238);
-  }
-  .img-container {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  .travel-img {
-    transition: all 1s ease-in-out;
-  }
-  .img-container:hover .travel-img {
-    transform: scale(1.2);
-  }
-  .travel-item-icon {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0.75rem;
-    background: rgb(249, 228, 148);
-    border-top-left-radius: 1rem;
-    transition: all 1s ease-in-out;
-    transform: translate(100%, 100%);
-  }
-  .img-container:hover .travel-item-icon {
-    transform: translate(0, 0);
-  }
-  .travel-item-icon:hover {
-    color: #fff;
-  }
-  .travel-item-value {
-    color: rgb(249, 228, 148);
-  }
 
-  kbd{
-      background-color: rgb(168, 111, 45);
-  }
-  /*end of  travel items */
