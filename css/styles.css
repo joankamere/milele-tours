@@ -156,6 +156,7 @@
     height: 100%;
     
     outline: 0.5rem solid #f12020;
+    
     z-index: -1;
     transition: all 1s ease-in-out;
   }
@@ -202,6 +203,7 @@
 
   kbd{
       background-color: #f12020;
+
   }
   /*end of  travel items */
 
