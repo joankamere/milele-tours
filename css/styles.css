@@ -677,3 +677,13 @@ footer{
     margin: 5px 0;
   }
 }
+.order {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-weight: bold;
+  background-image: url(https://media.cntraveler.com/photos/59ef91dd8d4f736d51415c2e/master/w_2667,h_2000,c_limit/7MileBeach-2013-HiRes.jpg);
+}
