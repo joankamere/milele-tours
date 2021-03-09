@@ -34,7 +34,7 @@
     padding: 0 30px;
   }
   .navbar{
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 2;
     padding: 25px 0;
@@ -165,7 +165,7 @@
   }
 /* footer */
 footer{
-  position: fixed;
+  position: relative;
   bottom: 0px;
   width: 100%;
   background: #111;
