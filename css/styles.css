@@ -13,7 +13,7 @@
     padding: 0 30px;
   }
   .navbar{
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 2;
     padding: 25px 0;
@@ -155,7 +155,7 @@
     width: 100%;
     height: 100%;
     
-    outline: 0.5rem solid rgb(249, 228, 148);
+    outline: 0.5rem solid #f12020;
     z-index: -1;
     transition: all 1s ease-in-out;
   }
@@ -201,14 +201,14 @@
   }
 
   kbd{
-      background-color: rgb(168, 111, 45);
+      background-color: #f12020;
   }
   /*end of  travel items */
 
 
 /* footer */
 footer{
-  position: fixed;
+  position: relative;
   bottom: 0px;
   width: 100%;
   background: #111;
