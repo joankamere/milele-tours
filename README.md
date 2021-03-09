@@ -11,11 +11,11 @@ Milele Tours - This platform is built for young kenyans interested in travelling
 
 ## Authors
 
-@Mugure-Inez
-@DevSheila
-@The0-44
-@joankamere
-@Wangechimk
+- @Mugure-Inez
+- @DevSheila
+- @The0-44
+- @joankamere
+- @Wangechimk
 
 ## LICENSE
 
