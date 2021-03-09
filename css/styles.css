@@ -202,6 +202,7 @@
     color: rgb(249, 228, 148);
   }
 
+  
   kbd{
       background-color: #f12020;
 
@@ -360,7 +361,7 @@ footer{
   }
 }
 
-=======
+
 /* about */
 .about-img__container {
     position: relative;
@@ -510,7 +511,7 @@ footer{
    /* jumbotron */
   .jumbotron{
     background-image: url("");
-    height: ;
+    /* height: ; */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -523,12 +524,12 @@ footer{
   .intro {
     padding-top: 140px;
   }
-  .intro img{
+  /* .intro img{
 
-  }
+  } */
 /* footer */
 footer{
-  position: fixed;
+  position: relative;
   bottom: 0px;
   width: 100%;
   background: #111;
