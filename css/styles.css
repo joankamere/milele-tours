@@ -131,8 +131,8 @@
   /* end of nabar section  */
    /* jumbotron */
   .jumbotron{
-    background-image: url("");
-    /* height: ; */
+    background-image: url("../img/map.jpg");
+    height:80vh ;
     background-size: cover;
     background-position: center;
     color: #fff;
