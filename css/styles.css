@@ -173,6 +173,7 @@
   
 
   /* travel items */
+ 
   .booking-icon{
     color: black;
 
@@ -187,7 +188,7 @@
   .booking-text :hover{
     color:rgb(85, 83, 83);
   }
-  
+
   
 .travel {
     background: rgb(238, 238, 238);
