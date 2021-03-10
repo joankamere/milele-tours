@@ -103,6 +103,7 @@
       text-align: center;
       background: #222;
       transition: all 0.3s ease;
+      
     }
     .navbar.show .menu-list{
       left: 0%;
@@ -126,11 +127,12 @@
   }
    /* jumbotron */
   .jumbotron{
-    background-image: url("");
-    /* height: ; */
+    background-image: url("../img/ocean.jpg");
+     height: 80vh;
     background-size: cover;
     background-position: center;
     color: #fff;
+    border-radius: 0px;
   }
   .jumbotron h1{
     margin: 30px 0;
@@ -508,32 +510,8 @@ footer{
       font-size: 27px;
     }
   }
-   /* jumbotron */
-  .jumbotron{
-    background-image: url("");
-    /* height: ; */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-  }
-  .jumbotron h1{
-    margin: 30px 0;
-    font-size: 30px;
-    line-height: 1.5;
-  }
-  .intro {
-    padding-top: 140px;
-  }
-  /* .intro img{
+  
 
-  } */
-/* footer */
-footer{
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-  background: #111;
-}
 .main-content{
   display: flex;
 }

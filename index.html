@@ -27,10 +27,11 @@
             </div>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Destinations</a></li>
+            <li><a href="#">TravelPackages</a></li>
             <li><a href="#">Booking</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        </div>
         <div class="icon menu-btn">
             <i class="fas fa-bars"></i>
         </div>
@@ -123,6 +124,7 @@
 
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
+    
                <p><kbd>From KES 118,590</kbd>
               &nbsp;
 
@@ -576,7 +578,7 @@
                   <input type="email" required>
                 </div>
                 <div class="msg">
-                  <div class="text">Message </div>
+                  <div class="text" rows="2" cols="25">Message </div>
                   <!-- <changeit rows="2" cols="25" required></changeit> -->
                 </div>
                 <div class="btn">
@@ -589,7 +591,7 @@
         <div class="bottom">
           <centre>
             <span class="credit">Created By <a href="https://www.milele tours.com">Milele Tours</a> | </span>
-            <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+            <span class="fas fa-copyright"></span><span> 2021 All rights reserved.</span>
           </centre>
         </div>
       </footer>
@@ -622,6 +624,27 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <!-- <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      }
+      cancelBtn.onclick = ()=>{
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      }
+      window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+      }
+    </script> -->
+  
+  
 </body>
 </html>
 
