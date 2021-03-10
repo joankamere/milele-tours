@@ -26,11 +26,12 @@
                 <i class="fas fa-times"></i>
             </div>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Booking</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#travelpackages">TravelPackages</a></li>
+            <li><a href="#bookings">Booking</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        </div>
         <div class="icon menu-btn">
             <i class="fas fa-bars"></i>
         </div>
@@ -42,8 +43,6 @@
     <div class="intro">
       <img src="">
       <h1>MILELE TOURS</h1>
-      <button type="button" class="btn btn-outline-light">bookings</button>
-
     </div>
 </div>
 
@@ -73,7 +72,7 @@
 
       
      <!-- travel -->
-     <section id="travel" class="travel py-5">
+     <section id="travel" class="travel py-5" id="travelpackages">
         <div class="container">
           <!-- section title -->
           <div class="row">
@@ -123,6 +122,7 @@
 
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
+    
                <p><kbd>From KES 118,590</kbd>
               &nbsp;
 
@@ -527,54 +527,7 @@
   </section>
   <!--end of travel items -->
 
-  <form id="formXYZ">
-    <div class="order" id="order">
-        <h1 class="text-center" id="milele-tours">Complete Your Booking</h1>
-        <div class="form-group row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8 order-overlay text-center">
-                <form class="col-sm-6 offset-sm-3 text-center" id="holiday">
-                    <label>Choose location</label>
-                    <select class="custom-select custom-select-md mb-3 place" id="location" required>
-                        <option value="location">Lamu</option>
-                        <option value="location">Nanyuki</option>
-                        <option value="location">Chalbi Desert</option>
-                        <option value="location">Nairobi</option>
-                        <option value="location">Diani</option>
-                        <option value="location">Malindi</option>
-                        <option value="location">Sagana</option>
-                        <option value="location">Mt. Longonot</option>
-                        <option value="location">Aberdares</option>
-                        <option value="location">Mt. Kenya</option>
-                        <option value="location">Naivasha</option>
-                        <option value="location">Maasai Mara</option>
-                        <option value="location">Mombasa</option>
-                        <option value="location">Amboseli</option>
-                        <option value="location">Kisumu</option>
-                        
-                    </select>
-                    <span class="form-label">Check In</span>
-                    <input class="form-control" id="checkin" type="date" required>
-
-                    <span class="form-label">Check Out</span>
-                    <input class="form-control" id="checkout" type="date" required>
-
-                    <span class="form-label">First Name</span>
-                    <input class="form-control" type="First Name" id="firstname" placeholder="Enter your First Name">
-
-                    <span class="form-label">Last Name</span>
-                    <input class="form-control" type="Last Name" id="lastname" placeholder="Enter your Last Name">
-
-                    <span class="form-label">Email</span>
-                    <input class="form-control" type="Email" id="emaill" placeholder="Enter your Email">
-
-                    <button type="submit" class="btn btn-success checkout" id="checkout" value="Book">Book Now!</button>
-                </form>
-                </a>
-            </div>
-        </div>
-    </div>
-    </form>
+    
     
 
 
@@ -623,7 +576,7 @@
                   <input type="email" required>
                 </div>
                 <div class="msg">
-                  <div class="text">Message </div>
+                  <div class="text" rows="2" cols="25">Message </div>
                   <!-- <changeit rows="2" cols="25" required></changeit> -->
                 </div>
                 <div class="btn">
@@ -636,7 +589,7 @@
         <div class="bottom">
           <centre>
             <span class="credit">Created By <a href="https://www.milele tours.com">Milele Tours</a> | </span>
-            <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+            <span class="fas fa-copyright"></span><span> 2021 All rights reserved.</span>
           </centre>
         </div>
       </footer>
@@ -669,6 +622,27 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <!-- <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      }
+      cancelBtn.onclick = ()=>{
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      }
+      window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+      }
+    </script> -->
+  
+  
 </body>
 </html>
 
