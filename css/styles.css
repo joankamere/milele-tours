@@ -291,6 +291,7 @@ footer{
 }
 .main-content{
   display: flex;
+  color: #f1f1f1;
 }
 .main-content .box{
   flex-basis: 50%;
@@ -300,6 +301,7 @@ footer{
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
+  color: #888;
 }
 .box .content{
   margin: 20px 0 0 0;
