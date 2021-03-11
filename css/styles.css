@@ -23,8 +23,10 @@ background: rgb(0,123,255,0.3);
 }
   .content{
     max-width: 1250px;
-    margin: auto;
+    margin:0 auto;
     padding: 0 30px;
+    max-height: 100%;
+    width: auto;
   }
   /* navbar section  */
   .navbar{
@@ -34,6 +36,8 @@ background: rgb(0,123,255,0.3);
     padding: 25px 0;
     transition: all 0.3s ease;
     background: brown;
+    letter-spacing: 4px;
+    margin-bottom: 0;
   }
   .navbar .content{
     display: flex;
