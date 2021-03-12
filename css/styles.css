@@ -297,6 +297,7 @@ background: rgb(0,123,255,0.3);
   color: black;
   padding-top: 10%;
   padding-bottom: 10%;
+  scroll-behavior: smooth;
 }
 .order h2{
     text-align: center;
@@ -323,26 +324,26 @@ background: rgb(0,123,255,0.3);
   box-sizing: border-box;
 }
 
-/* .row {
-  display: -ms-flexbox;
+.row {
+  display: -ms-flexbox; /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; 
+  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   margin: 0 -16px;
-} */
+}
 
 .col-25 {
-  -ms-flex: 25%; 
+  -ms-flex: 25%; /* IE10 */
   flex: 25%;
 }
 
 .col-50 {
-  -ms-flex: 50%; 
+  -ms-flex: 50%; /* IE10 */
   flex: 50%;
 }
 
 .col-75 {
-  -ms-flex: 75%;
+  -ms-flex: 75%; /* IE10 */
   flex: 75%;
 }
 
@@ -352,6 +353,12 @@ background: rgb(0,123,255,0.3);
   padding: 0 16px;
 }
 
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
 
 input[type=text] {
   width: 100%;
@@ -389,7 +396,14 @@ span.price {
   float: right;
   color: grey;
 }
-
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }  
   
 /* end of payment form*/
 
@@ -424,11 +438,13 @@ span.price {
 }
 .final-msg {
 display: none;
+color: blue;
+text-decoration-line: underline;
 }
+
 
 /* booking form section  */
 
-}
 
 .image-info{
 
