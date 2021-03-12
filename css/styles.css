@@ -289,16 +289,135 @@ background: rgb(0,123,255,0.3);
   /*end of  travel items */
 
 /* booking form section  */
-  .order {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: black;
-    font-weight: bold;
-    background-image: url('https://media.cntraveler.com/photos/59ef91dd8d4f736d51415c2e/master/w_2667,h_2000,c_limit/7MileBeach-2013-HiRes.jpg');
+.booking-section{
+  background-image: url('https://media.cntraveler.com/photos/59ef91dd8d4f736d51415c2e/master/w_2667,h_2000,c_limit/7MileBeach-2013-HiRes.jpg');
+  text-align: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.order h2{
+    text-align: center;
+    padding-bottom: 4%;
   }
+
+ 
+
+
+
+/* payment form*/
+
+.payment-form{
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+} */
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+  
+/* end of payment form*/
+
+#bookingForm{
+  background-color: white;
+  
+  border-radius: 10px;
+  box-shadow:5px 5px 10px rgb(110, 108, 108);
+}
+.bookingSummary{
+  background-color: white;
+  border-radius: 10px;
+  opacity:0.92;
+}
+.btn1{
+   
+  background-color: black;
+
+  color:white;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+.btn1:hover{
+   
+  background-color: black;
+  color:white;
+  box-shadow:5px 5px 10px rgb(95, 92, 92);
+ 
+  font-weight: bold;
+  margin-bottom: -1px;
+}
+ 
+
 
 /* booking form section  */
 
