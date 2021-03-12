@@ -565,443 +565,54 @@
   </section>
   <!--end of travel items -->
 
-<!--booking form--> 
+  <form id="formXYZ">
+    <div class="order" id="order">
+        <h1 class="text-center" id="milele-tours">Complete Your Booking</h1>
+        <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 order-overlay text-center">
+                <form class="col-sm-6 offset-sm-3 text-center" id="holiday">
+                    <label>Choose location</label>
+                    <select class="custom-select custom-select-md mb-3 place" id="location" required>
+                        <option value="location">Lamu</option>
+                        <option value="location">Nanyuki</option>
+                        <option value="location">Chalbi Desert</option>
+                        <option value="location">Nairobi</option>
+                        <option value="location">Diani</option>
+                        <option value="location">Malindi</option>
+                        <option value="location">Sagana</option>
+                        <option value="location">Mt. Longonot</option>
+                        <option value="location">Aberdares</option>
+                        <option value="location">Mt. Kenya</option>
+                        <option value="location">Naivasha</option>
+                        <option value="location">Maasai Mara</option>
+                        <option value="location">Mombasa</option>
+                        <option value="location">Amboseli</option>
+                        <option value="location">Kisumu</option>
+                        
+                    </select>
+                    <span class="form-label">Check In</span>
+                    <input class="form-control" id="checkin" type="date" required>
 
-<div class="row booking-section" id="bookForm">
-  <div class="col-sm-10 col-md-10 col-lg-5 mx-auto mt-4" id="bookingForm">
-    <form action="" class="mt-5 " id="travel-booking-form">
-      <h4 class="mb-3">Booking Form</h4>
+                    <span class="form-label">Check Out</span>
+                    <input class="form-control" id="checkout" type="date" required>
 
-      <span class="form-label">
-        <h6>Choose Your Travel Destination</h6>
-      </span>
-      <select class="custom-select custom-select-md mb-3 place" type="text" id="location" required>
-        <!-- <option selected value="choose">Choose your location</option> -->
+                    <span class="form-label">First Name</span>
+                    <input class="form-control" type="First Name" id="firstname" placeholder="Enter your First Name">
 
-        <option value="Lamu">Lamu</option>
-        <option value="Nanyuki">Nanyuki</option>
-        <option value="Chalbi Desert">Chalbi Desert</option>
-        <option value="Nairobi National Park">Nairobi</option>
-        <option value="Diani">Diani</option>
-        <option value="Malindi">Malindi</option>
-        <option value="Sagana">Sagana</option>
-        <option value="Mt.Longonot">Mt. Longonot</option>
-        <option value="Aberdares">Aberdares</option>
-        <option value="Mt.Kenya">Mt. Kenya</option>
-        <option value="Naivasha">Naivasha</option>
-        <option value="Maasai Mara">Maasai Mara</option>
-        <option value="Mombasa">Mombasa</option>
-        <option value="Amboseli">Amboseli</option>
-        <option value="Kisumsu">Kisumu</option>
+                    <span class="form-label">Last Name</span>
+                    <input class="form-control" type="Last Name" id="lastname" placeholder="Enter your Last Name">
 
-      </select>
+                    <span class="form-label">Email</span>
+                    <input class="form-control" type="Email" id="emaill" placeholder="Enter your Email">
 
-
-      <div class="form-row">
-        <div class="col-sm-6">
-          <span class="form-label ">
-            <h6>Check In</h6>
-          </span>
-          <input class="form-control my-3 p-4" id="checkin" type="date">
+                    <button type="submit" class="btn btn-success checkout" id="checkout" value="Book">Book Now!</button>
+                </form>
+                </a>
+            </div>
         </div>
-
-
-        <div class="col-sm-6 ">
-          <span class="form-label ">
-            <h6>Check Out</h6>
-          </span>
-          <input class="form-control my-3 p-4" id="checkout" type="date">
-        </div>
-
-      </div>
-
-
-      <span class="form-label ">
-        <h6>Number of people</h6>
-      </span>
-      <input class="form-control my-3 p-4" type="number" id="nopeople" placeholder="">
-
-      <br><br>
-      <button type="submit" class=" btn-lg btn-info proceed mt-1 mb-3">Proceed</button>
-
+    </div>
     </form>
-  </div>
-
-
-  <div class="col-sm-10 col-md-10 col-lg-6 mx-auto p-4 mt-4 bookingSummary">
-    <div id="information">
-
-    </div>
-    <h2>Your Booking Summary</h2>
-
-    <div class="choice">
-
-      <table class="table " id="booking-table">
-        <thead>
-          <tr>
-            <th scope="col">Location</th>
-            <th scope="col">Check In</th>
-            <th scope="col">Check Out</th>
-            <th scope="col">No People</th>
-            <th scope="col">Price Per Person</th>
-            <th scope="col">Total</th>
-          </tr>
-        </thead>
-        <tbody id="book">
-
-        </tbody>
-
-      </table>
-      <div class="row" id="bookings-total">
-
-        <div class="col-lg-8 col-md-8 text-center">
-          <h1> Your Bill Is : KES <span class="total-price"></span></h1>
-        </div>
-
-      </div>
-
-    </div>
-    <div class="row">
-      <div class="col-lg-2"></div>
-      <button type="button" id="btnClear" class=" btn btn-lg btn1 col-lg-3 m-5">CANCEL ORDERS</button>
-
-      <button type="button" id="btnCheckout" class=" btn btn-lg btn1 col-lg-3 m-5">CHECKOUT</button>
-      <div class="col-lg-2"></div>
-    </div>
-
-    <div class="final-msg">
-      <p><a href="https://mugure-inez.github.io/milele-tours/#"> Click to return to home.</a></p>
-    </div>
-  </div>
-</div>
-              </div>
-  
-              <div class="card-body">
-              
-                <h5 class="card-title text-center stretched link">
-                  <u>Diani Weekend Getaway Package</u>
-                </h5>
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                 <p><kbd>KES 20000/-</kbd>
-                &nbsp;
-  
-                per person sharing
-                </p>
-                
-                </div>
-                <span class="card-ftr justify-content-between">
-                  <i class="fas fa-moon"></i>
-                  3 days, 2 nights
-                
-                  <i class="fas fa-campground"></i>
-                  Half Board
-                </span>
-              </div>
-  
-  
-            </div>
-          </div>
-            <!-- end of card 3-->
-
-            <!-- single card 4 -->
-            <div class="col-10 col-sm-6 col-md-6 col-lg-4 mx-auto my-3 travel-item " data-item="">
-              <div class="card ">
-    
-                <div class="img-container">
-                  <img src="img/rafting.jpg" class="card-img-top travel-img" alt="">
-                  
-                  <div class="image__overlay">
-                    <div class="image-info">
-                      <ul class="overlay-text">
-                        <li>No Of Persons:  3-6 Persons</li>
-                        <li>Transport:Bus/ Van pickup</li>
-                        <li>Accomodation:  Tent</li>
-                        <li>Activities : Kayaking , white water rafting & ziplining</li>
-                      </ul>
-                      
-                    </div>
-                  </div>
-                  <span class="travel-item-icon">
-                    <i class="far fa-map"></i>
-                  </span>
-                </div>
-    
-                <div class="card-body">
-                
-                  <h5 class="card-title text-center stretched link">
-                    <u>Sagana Water Rafting Package</u>
-                  </h5>
-                  <div class="card-text d-flex justify-content-between text-capitalize">
-                   <p><kbd>KES 5500/-</kbd>
-                  &nbsp;
-    
-                  per person sharing
-                  </p>
-                  
-                  </div>
-                  <span class="card-ftr justify-content-between">
-                    <i class="fas fa-moon"></i>
-                    3 days, 2 nights
-                  
-                    <i class="fas fa-campground"></i>
-                    Bed & breakfast
-                  </span>
-                </div>
-    
-    
-              </div>
-            </div>
-            <!-- end of card 4  -->
-
-             <!-- single card 5 -->
-             <div class="col-10 col-sm-6 col-md-6 col-lg-4 mx-auto my-3 travel-item " data-item="">
-              <div class="card ">
-    
-                <div class="img-container">
-                  <img src="img/hiking1.jpg" class="card-img-top travel-img" alt="">
-                  
-                  <div class="image__overlay">
-                    <div class="image-info">
-                      <ul class="overlay-text">
-                        <li>No Of Persons:  3-5 Persons</li>
-                        <li>Transport: Bus/Van pickup</li>
-                        <li>Accomodation:  Airbnb</li>
-                        <li>Activities : Hiking,ziplining  & site seeing</li>
-                      </ul>
-                      
-                    </div>
-                  </div>
-                  <span class="travel-item-icon">
-                    <i class="far fa-map"></i>
-                  </span>
-                </div>
-    
-                <div class="card-body">
-                
-                  <h5 class="card-title text-center stretched link">
-                    <u>Mt.Longonot Group Hike Package</u>
-                  </h5>
-                  <div class="card-text d-flex justify-content-between text-capitalize">
-                   <p><kbd>KES 2000/-</kbd>
-                  &nbsp;
-    
-                  per person sharing
-                  </p>
-                  
-                  </div>
-                  <span class="card-ftr justify-content-between">
-                    <i class="fas fa-moon"></i>
-                    2 days, 1 night
-                  
-                    <i class="fas fa-campground"></i>
-                    Half Board
-                  </span>
-                </div>
-    
-    
-              </div>
-            </div>
-            <!-- end of card 5  -->
-
-                <!-- single card 6 -->
-                <div class="col-10 col-sm-6 col-md-6 col-lg-4 mx-auto my-3 travel-item " data-item="">
-                  <div class="card ">
-        
-                    <div class="img-container">
-                      <img src="img/hiking3.jpg" class="card-img-top travel-img" alt="">
-                      
-                      <div class="image__overlay">
-                        <div class="image-info">
-                          <ul class="overlay-text">
-                            <li>No Of Persons:  3-5 Persons</li>
-                            <li>Transport: Bus/Van pickup</li>
-                            <li>Accomodation:  Airbnb</li>
-                            <li>Activities : Hiking & site seeing</li>
-                          </ul>
-                          
-                        </div>
-                      </div>
-                      <span class="travel-item-icon">
-                        <i class="far fa-map"></i>
-                      </span>
-                    </div>
-        
-                    <div class="card-body">
-                    
-                      <h5 class="card-title text-center stretched link">
-                        <u>Mt.Aberdares Group Hike Package</u>
-                      </h5>
-                      <div class="card-text d-flex justify-content-between text-capitalize">
-                       <p><kbd>KES 7000/-</kbd>
-                      &nbsp;
-        
-                      per person sharing
-                      </p>
-                      
-                      </div>
-                      <span class="card-ftr justify-content-between">
-                        <i class="fas fa-moon"></i>
-                        2 days, 1 night
-                      
-                        <i class="fas fa-campground"></i>
-                        Half Board
-                      </span>
-                    </div>
-        
-        
-                  </div>
-                </div>
-                <!-- end of card 6 -->
-                 <!-- single card 7 -->
-                 <div class="col-10 col-sm-6 col-md-6 col-lg-4 mx-auto my-3 travel-item " data-item="">
-                  <div class="card ">
-        
-                    <div class="img-container">
-                      <img src="img/ocean.jpg" class="card-img-top travel-img" alt="">
-                      
-                      <div class="image__overlay">
-                        <div class="image-info">
-                          <ul class="overlay-text">
-                            <li>No Of Persons:  6-8 Persons</li>
-                            <li>Transport: Air/Wilson airport</li>
-                            <li>Accomodation:  Airbnb</li>
-                            <li>Activities : sunset dhow crise, surfing& site visits</li>
-                          </ul>
-                          
-                        </div>
-                      </div>
-                      <span class="travel-item-icon">
-                        <i class="far fa-map"></i>
-                      </span>
-                    </div>
-        
-                    <div class="card-body">
-                    
-                      <h5 class="card-title text-center stretched link">
-                        <u>Lamu Escape</u>
-                      </h5>
-                      <div class="card-text d-flex justify-content-between text-capitalize">
-                       <p><kbd>KES 50,000/-</kbd>
-                      &nbsp;
-        
-                      per person sharing
-                      </p>
-                      
-                      </div>
-                      <span class="card-ftr justify-content-between">
-                        <i class="fas fa-moon"></i>
-                        3 days, 2 night
-                      
-                        <i class="fas fa-campground"></i>
-                        full board
-                      </span>
-                    </div>
-        
-        
-                  </div>
-                </div>
-                <!-- end of card 7 -->
-                 <!-- single card 8 -->
-                 <div class="col-10 col-sm-6 col-md-6 col-lg-4 mx-auto my-3 travel-item " data-item="">
-                  <div class="card ">
-        
-                    <div class="img-container">
-                      <img src="img/desert.jpg" class="card-img-top travel-img" alt="">
-                      
-                      <div class="image__overlay">
-                        <div class="image-info">
-                          <ul class="overlay-text">
-                            <li>No Of Persons:  8-10 Persons</li>
-                            <li>Transport: Bus/Van pickup</li>
-                            <li>Accomodation:  Airbnb</li>
-                            <li>Activities : quad bike riding, helipad tour & visit lake Turkana</li>
-                          </ul>
-                          
-                        </div>
-                      </div>
-                      <span class="travel-item-icon">
-                        <i class="far fa-map"></i>
-                      </span>
-                    </div>
-        
-                    <div class="card-body">
-                    
-                      <h5 class="card-title text-center stretched link">
-                        <u>Chalbi desert</u>
-                      </h5>
-                      <div class="card-text d-flex justify-content-between text-capitalize">
-                       <p><kbd>KES 100,000/-</kbd>
-                      &nbsp;
-        
-                      per person sharing
-                      </p>
-                      
-                      </div>
-                      <span class="card-ftr justify-content-between">
-                        <i class="fas fa-moon"></i>
-                        4 days, 3 night
-                      
-                        <i class="fas fa-campground"></i>
-                        Full board
-                      </span>
-                    </div>
-        
-        
-                  </div>
-                </div>
-                <!-- end of card 8 -->
-                 <!-- single card 9 -->
-                 <div class="col-10 col-sm-6 col-md-6 col-lg-4 mx-auto my-3 travel-item " data-item="">
-                  <div class="card ">
-        
-                    <div class="img-container">
-                      <img src="img/waterfall.jpg" class="card-img-top travel-img" alt="">
-                      
-                      <div class="image__overlay">
-                        <div class="image-info">
-                          <ul class="overlay-text">
-                            <li>No Of Persons:  10-15 Persons</li>
-                            <li>Transport: Bus/Van pickup</li>
-                            <li>Accomodation:  camping</li>
-                            <li>Activities : visit ol pejeta conservancy, ngare-ndare & hiking</li>
-                          </ul>
-                          
-                        </div>
-                      </div>
-                      <span class="travel-item-icon">
-                        <i class="far fa-map"></i>
-                      </span>
-                    </div>
-        
-                    <div class="card-body">
-                    
-                      <h5 class="card-title text-center stretched link">
-                        <u>Nanyuki Getaway</u>
-                      </h5>
-                      <div class="card-text d-flex justify-content-between text-capitalize">
-                       <p><kbd>KES 17,000/-</kbd>
-                      &nbsp;
-        
-                      per person sharing
-                      </p>
-                      
-                      </div>
-                      <span class="card-ftr justify-content-between">
-                        <i class="fas fa-moon"></i>
-                        3 days, 2 night
-                      
-                        <i class="fas fa-campground"></i>
-                        Half Board
-                      </span>
-                    </div>
-        
-        
-                  </div>
-                </div>
-                <!-- end of card 9 -->
-        <!--end of single travel item-->
-
-<!--end of booking form-->
     
 
 
