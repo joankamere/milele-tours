@@ -1,3 +1,5 @@
+
+
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
   /* body section  */
 *{
@@ -6,25 +8,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
-  /* custom scroll bar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-::selection{
-background: rgb(0,123,255,0.3);
-}
   .content{
     max-width: 1250px;
-    margin:0 auto;
+    margin: auto;
     padding: 0 30px;
-    max-height: 100%;
-    width: auto;
   }
   /* navbar section  */
   .navbar{
@@ -34,8 +21,11 @@ background: rgb(0,123,255,0.3);
     padding: 25px 0;
     transition: all 0.3s ease;
     background: brown;
-    letter-spacing: 4px;
-    margin-bottom: 0;
+  }
+  .navbar.sticky{
+    background: #1b1b1b;
+    padding: 10px 0;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
   }
   .navbar .content{
     display: flex;
@@ -45,8 +35,7 @@ background: rgb(0,123,255,0.3);
   .navbar .logo a{
     color: #fff;
     font-size: 30px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
     text-decoration: none;
   }
   .navbar .menu-list{
@@ -118,11 +107,6 @@ background: rgb(0,123,255,0.3);
       background: #222;
       transition: all 0.3s ease;
     }
-    .navbar.sticky {
-      background:#1b1b1b;
-      padding: 10px 0;
-      box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-    }
     .navbar.show .menu-list{
       left: 0%;
     }
@@ -148,14 +132,14 @@ background: rgb(0,123,255,0.3);
    /* jumbotron */
   .jumbotron{
     background-image: url("../img/map.jpg");
-    height: 120vh;
+    height:80vh ;
     background-size: cover;
     background-position: center;
     color: #fff;
   }
   .jumbotron h1{
     margin: 30px 0;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.5;
   }
   .intro {
@@ -163,7 +147,7 @@ background: rgb(0,123,255,0.3);
   }
   /* .intro img{
 
- 
+  } */
 /* about */
 .about-img__container {
     position: relative;
@@ -189,22 +173,6 @@ background: rgb(0,123,255,0.3);
   
 
   /* travel items */
- 
-  .booking-icon{
-    color: black;
-
-  }
-  .booking-icon :hover{
-    color: #fff;
-
-  }
-  .booking-text{
-    color:black;
-  }
-  .booking-text :hover{
-    color:rgb(85, 83, 83);
-  }
-
   
 .travel {
     background: rgb(238, 238, 238);
@@ -428,6 +396,7 @@ display: none;
 
 /* booking form section  */
 
+=======
 }
 
 .image-info{
@@ -450,123 +419,7 @@ display: none;
     color: black;
     font-weight: bold;
     background-image: url('https://media.cntraveler.com/photos/59ef91dd8d4f736d51415c2e/master/w_2667,h_2000,c_limit/7MileBeach-2013-HiRes.jpg');
-
   }
-
- 
-
-
-
-/* payment form*/
-
-.payment-form{
-  font-family: Arial;
-  font-size: 17px;
-  padding: 8px;
-  display: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* .row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap; 
-  flex-wrap: wrap;
-  margin: 0 -16px;
-} */
-
-.col-25 {
-  -ms-flex: 25%; 
-  flex: 25%;
-}
-
-.col-50 {
-  -ms-flex: 50%; 
-  flex: 50%;
-}
-
-.col-75 {
-  -ms-flex: 75%;
-  flex: 75%;
-}
-
-.col-25,
-.col-50,
-.col-75 {
-  padding: 0 16px;
-}
-
-
-input[type=text] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-.icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: 24px;
-}
-
-
-a {
-  color: #2196F3;
-}
-
-hr {
-  border: 1px solid lightgrey;
-}
-
-span.price {
-  float: right;
-  color: grey;
-}
-
-  
-/* end of payment form*/
-
-#bookingForm{
-  background-color: white;
-  
-  border-radius: 10px;
-  box-shadow:5px 5px 10px rgb(110, 108, 108);
-}
-.bookingSummary{
-  background-color: white;
-  border-radius: 10px;
-  opacity:0.92;
-}
-.btn1{
-   
-  background-color: black;
-
-  color:white;
-  height: 100%;
-  width: 100%;
-  border-radius: 4px;
-}
-.btn1:hover{
-   
-  background-color: black;
-  color:white;
-  box-shadow:5px 5px 10px rgb(95, 92, 92);
- 
-  font-weight: bold;
-  margin-bottom: -1px;
-}
- 
-
 
 /* booking form section  */
 
@@ -579,7 +432,6 @@ footer{
 }
 .main-content{
   display: flex;
-  color: #f1f1f1;
 }
 .main-content .box{
   flex-basis: 50%;
@@ -589,7 +441,6 @@ footer{
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #888;
 }
 .box .content{
   margin: 20px 0 0 0;
